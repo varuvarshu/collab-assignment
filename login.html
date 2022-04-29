@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        body{
+            background: #4776E6;
+            background: -webkit-linear-gradient(to right, #8E54E9, #4776E6);  
+            background: linear-gradient(to right, #8E54E9, #4776E6); 
+            font-family:sans-serif;
+        }
+
+        #card{
+            width: 400px;
+            height: 500px;
+            margin: auto;
+            background-color: white;
+            border-radius: 10px;
+            margin-top: 10%;
+        }
+
+        h1{
+            text-align: center;
+            padding: 50px;
+            font-size: 40px;
+        }
+
+        input{
+            width: 80%;
+            height: 30px;
+            display: flex;
+            justify-content: center;
+            margin: auto;
+            margin-top: 30px;
+            font-size: 15px;
+            padding: 5px;
+        }
+
+        #mail, #pass{
+            border-top: none;
+            border-left: none;
+            border-right: none;
+        }
+
+        #btn{
+            border: none;
+            background: #4776E6;  
+            background: -webkit-linear-gradient(to right, #8E54E9, #4776E6);  
+            background: linear-gradient(to right, #8E54E9, #4776E6);
+            color: white;
+            font-weight: bold;
+            width:83%;
+            height: 40px;
+            cursor: pointer;
+        }
+
+        .bottom{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            margin-top: 30px;
+            color: gray;
+        }
+
+        .bottom > p:nth-child(2){
+            color: #2c57a0;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        #change{
+            margin-top: -10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="card">
+        <h1>Login</h1>
+
+        <input type="email" id="mail" placeholder="Email">
+        <input type="password" id="pass" placeholder="Password">
+        <input type="button" id="btn" value="Login">
+
+        <div class="bottom"><p>Forgot</p> <p>Password</p>?</div>
+        <div class="bottom" id="change"><p>Don't have an account ? </p><p>Sign up</p></div>
+    </div>
+</body>
+</html>
